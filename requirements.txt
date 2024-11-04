@@ -8,3 +8,4 @@ matplotlib
 langchain-core
 langchain-aws
 langchain-community
+streamlit
