@@ -2,7 +2,9 @@
 # Projet d'Analyse Financière et de Prédiction
 
 ## Présentation du projet
-Ce projet a pour objectif de créer un outil d'analyse et de prédiction des données financières. Il combine l'utilisation de bibliothèques d'apprentissage automatique telles que `scikit-learn`, la récupération de données financières en temps réel via `yfinance`, et des visualisations graphiques avec `matplotlib`. De plus, le projet intègre des fonctionnalités de prompts conversationnels basées sur les services AWS, telles que `ChatBedrock` et `AmazonKnowledgeBasesRetriever`.
+Ce projet d'analyse financière est conçu pour évaluer les entreprises dans un but d'investissement. Il oriente un chatbot à réaliser une analyse fondamentale basée uniquement sur sa base de données et une analyse technique reposant sur un calcul expliqué par la suite. L'objectif est de former une synthèse permettant de recommander l'achat ou non du titre analysé.
+
+
 
 ## Installation
 
