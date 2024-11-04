@@ -41,3 +41,14 @@ Pour utiliser les fonctionnalités basées sur AWS, assurez-vous que vos identif
 
 ### Note
 Pour des détails supplémentaires sur les configurations avancées et les cas d'utilisation, veuillez consulter la documentation complète dans le répertoire `docs`.
+
+## Exemples d'utilisation :
+
+Pour réaliser une analyse d'entreprise, suivez ces exemples :
+
+1. **Pour une analyse générale de Google sur une période de 3 ans**, tapez par exemple:
+`Analyse moi Google pour une perspective de 2 ans`
+2. **Pour une analyse basée sur des documents financiers, tapez :**, tapez par exemple:
+`Analyse-moi Couche-Tard pour une perspective de 2 ans.`
+> **Remarque :** Pour le moment, seuls les documents financiers de Couche-Tard sont disponibles dans le système.
+3. **Pour afficher des graphiques financiers**, sélectionnez l'entreprise, les indicateurs à afficher, puis la période de temps souhaitée. 
