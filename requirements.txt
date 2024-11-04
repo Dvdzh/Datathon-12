@@ -1,0 +1,10 @@
+yfinance
+numpy
+pandas
+scikit-learn
+boto3
+pydantic
+matplotlib
+langchain-core
+langchain-aws
+langchain-community
