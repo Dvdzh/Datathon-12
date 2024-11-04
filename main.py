@@ -115,7 +115,8 @@ st.set_page_config(page_title='FinApp - Assistant Financier', page_icon="🦜️
 #         st.markdown(css, unsafe_allow_html=True)
 # load_css()
 
-welcome_message = "Bienvenue ! Je suis FinApp, votre assistant financier. Comment puis-je vous aider ?"
+welcome_message = "Bienvenue dans votre assistant d'analyse financière ! Ici, vous pouvez obtenir des analyses détaillées, des prédictions basées sur des données récentes et des visualisations graphiques pour mieux comprendre et anticiper les tendances financières des entreprises. Que vous cherchiez une vue d'ensemble, une analyse spécifique ou des projections sur mesure, je suis là pour vous accompagner."
+
 
 # Clear Chat History function
 def clear_chat_history():
@@ -216,7 +217,7 @@ def plot_financial_data(company_symbol, selected_indicators, selected_period):
             fig, axs = plt.subplots(1, 2, figsize=(14, 6))
         elif num_indicators == 3:
             fig, axs = plt.subplots(2, 2, figsize=(10, 8))
-            axs[3].remove()  # Remove the empty fourth subplot
+            axs[1, 1].remove()  # Remove the empty fourth subplot
             axs = axs.flatten()[:3]  # Flatten and limit to 3 subplots
         elif num_indicators == 4:
             fig, axs = plt.subplots(2, 2, figsize=(10, 8))
@@ -725,7 +726,7 @@ def parse_s3_uri(uri: str) -> tuple:
 
 # Initialize session state for messages if not already present
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Bienvenue dans votre assistant d'analyse financière ! Ici, vous pouvez obtenir des analyses détaillées, des prédictions basées sur des données récentes et des visualisations graphiques pour mieux comprendre et anticiper les tendances financières des entreprises. Que vous cherchiez une vue d'ensemble, une analyse spécifique ou des projections sur mesure, je suis là pour vous accompagner."}]
 
 # Display chat messages
 for message in st.session_state.messages:
